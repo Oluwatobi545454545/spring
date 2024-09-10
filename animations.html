@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="animations.css">
+    <style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        animation-name: baka;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(1,.31,.04,.91);
+        animation-fill-mode:forwards ;
+    }
+
+    @keyframes baka {
+        /* from {
+            background-color: red;
+        }
+        to {
+            background-color: blue;
+        } */
+         0%{
+            background-color: red;
+            transform: translate(0,0) scale(1) rotate(0);
+            border-radius: 50%;
+         }
+         25%{
+            background-color: blue;
+            transform: translate(300px,0) scale(0.5) rotate(180deg);
+            border-radius: 50%;
+         }
+         50%{
+            background-color: yellow;
+            transform: translate(300px,300px) scale(2) rotate(360deg);
+            border-radius: 50%;
+         }
+         75%{
+            background-color: green;
+            transform: translate(0,300px) scale(0.5) rotate(180deg);
+            border-radius: 50%;
+         }
+         100%{
+            background-color: purple;
+            transform: translate(0,0) scale(1) rotate(0);
+            border-radius: 50%;
+         }
+    }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
